@@ -13,7 +13,6 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/api/v1")
 public class MessageJsonController {
 
-    @Autowired
     private RabbitMQJsonProducer jsonProducer;
 
     public MessageJsonController(RabbitMQJsonProducer jsonProducer) {
